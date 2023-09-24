@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="352" id="KGk-i7-Jjw" customClass="HomeTableViewCell" customModule="TotalityCorpAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="317" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOd-6z-vif">
+                        <rect key="frame" x="0.0" y="0.0" width="317" height="400"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cMY-Qd-Mlb" userLabel="Card">
+                                <rect key="frame" x="30" y="20" width="257" height="360"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDs-1e-3hd">
+                                        <rect key="frame" x="15" y="293" width="227" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="1rx-qJ-dpu"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="0.96843956949999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title=""/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yellow" translatesAutoresizingMaskIntoConstraints="NO" id="1Op-9W-Cwt">
+                                        <rect key="frame" x="15" y="15" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="vIG-Jc-MYa"/>
+                                            <constraint firstAttribute="width" constant="100" id="vTJ-9q-LrN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstItem="1Op-9W-Cwt" firstAttribute="leading" secondItem="cMY-Qd-Mlb" secondAttribute="leading" constant="15" id="Dja-Bf-aUO"/>
+                                    <constraint firstItem="1Op-9W-Cwt" firstAttribute="top" secondItem="cMY-Qd-Mlb" secondAttribute="top" constant="15" id="lBd-d3-0QI"/>
+                                    <constraint firstAttribute="trailing" secondItem="gDs-1e-3hd" secondAttribute="trailing" constant="15" id="lLj-T2-nhH"/>
+                                    <constraint firstAttribute="bottom" secondItem="gDs-1e-3hd" secondAttribute="bottom" constant="22" id="mq6-vf-lRv"/>
+                                    <constraint firstItem="gDs-1e-3hd" firstAttribute="leading" secondItem="cMY-Qd-Mlb" secondAttribute="leading" constant="15" id="u4K-Gp-Yak"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cMY-Qd-Mlb" firstAttribute="top" secondItem="BOd-6z-vif" secondAttribute="top" constant="20" id="Dek-jv-4wO"/>
+                            <constraint firstItem="cMY-Qd-Mlb" firstAttribute="leading" secondItem="BOd-6z-vif" secondAttribute="leading" constant="30" id="K1S-Il-fDu"/>
+                            <constraint firstAttribute="trailing" secondItem="cMY-Qd-Mlb" secondAttribute="trailing" constant="30" id="QIk-KF-m7a"/>
+                            <constraint firstAttribute="bottom" secondItem="cMY-Qd-Mlb" secondAttribute="bottom" constant="20" id="g02-rE-j1g"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="BOd-6z-vif" secondAttribute="bottom" id="8Dx-CQ-wSg"/>
+                    <constraint firstItem="BOd-6z-vif" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DNa-r8-6RI"/>
+                    <constraint firstAttribute="trailing" secondItem="BOd-6z-vif" secondAttribute="trailing" id="VaX-ex-PdX"/>
+                    <constraint firstItem="BOd-6z-vif" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="usN-2H-HUa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonPlay" destination="gDs-1e-3hd" id="QLg-DX-8eZ"/>
+                <outlet property="cardView" destination="cMY-Qd-Mlb" id="qof-EW-BIb"/>
+                <outlet property="yellowImage" destination="1Op-9W-Cwt" id="iPx-hc-AMi"/>
+            </connections>
+            <point key="canvasLocation" x="194.6564885496183" y="128.16901408450704"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yellow" width="60" height="55"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
